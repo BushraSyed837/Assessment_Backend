@@ -1,0 +1,37 @@
+### 
+GET http://localhost:3000/ HTTP/1.1
+
+### 
+POST http://localhost:3000/addFoodItem HTTP/1.1
+Content-Type: application/json
+
+{
+    "uri": "parkwweerr",
+    "label":"pending",
+    "brand": "parkwweerr",
+    "categoryLabel":"pending",
+    "foodContentsLabel": "jcijci"
+}
+
+### 
+POST http://localhost:3000/editFoodItem/5 HTTP/1.1
+Content-Type: application/json
+
+{
+    "foodId": "food_b4m99bgatuhmfybeq0d7xa9uvr1b",
+    "uri": "parkwweerr",
+    "label":"status",
+    "brand": "parkwweerr",
+    "categoryLabel":"pending",
+    "foodContentsLabel": "jcijci"
+}
+
+### 
+POST http://localhost:3000/deleteFoodItem HTTP/1.1
+Content-Type: application/json
+
+{
+    "index": 1
+}
+
+
